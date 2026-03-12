@@ -34,9 +34,9 @@ public class atividade4 {
 
     /*
     converterParaBinario(10)
-        └─ converterParaBinario(5)
-            └─ converterParaBinario(2)
-                └─ converterParaBinario(1)
+         converterParaBinario(5)
+             converterParaBinario(2)
+                 converterParaBinario(1)
                 return "1"
             return "10"
          return "101"
