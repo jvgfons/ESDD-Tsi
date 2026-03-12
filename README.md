@@ -6,6 +6,7 @@ Repositório destinado ao armazenamento de **conteúdos, projetos e atividades**
 - Prontuário: **BV3054888**;
 
 - **Disciplina:** Estruturas de Dados
+- **Professor:** Paulo Renato de Oliveira Gaviao
 - **Curso:** Tecnologia em Sistemas para Internet
 - **Instituição:** IFSP - Campus São João da Boa Vista
 
