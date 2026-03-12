@@ -19,60 +19,52 @@ O enunciado completo dos exercícios pode ser consultado no **arquivo `.docx` pr
 
 ## Código dos exercícios
 
+---
+
 ## Exercício 1
 
 ```java
-
-
 import java.util.Scanner;
 
 public class atividade1 {
     public static void main(String[] args) {
 
-            //Inicializacao das variaveis
-
         int num1;
         int num2;
-
-            //Inicializacao do Scanner para ler a entrada do usuario
 
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Digite o primeiro numero: ");
 
-        //Pede o numero usando parseInt para converter a string em inteiro
         num1 = Integer.parseInt(scan.nextLine());
 
         System.out.print("Digite a potencia para o primeiro numero: ");
         num2 = Integer.parseInt(scan.nextLine());
 
-        System.out.printf("O resultado de %d elevado a %d é: %d", num1, num2, potencia(num1, num2)); //Chama o metodo potencia utilizando num1 e num2 como parametros, dentro do print para já mostrar o resultado para o usuario.
-
-        
+        System.out.printf("O resultado de %d elevado a %d é: %d", num1, num2, potencia(num1, num2));
 
         scan.close();
-        
-        
     }
 
-    //Metodo para calcular a potencia usando recursividade
     public static int potencia(int base, int expoente) {
-    if (expoente == 0) {
-        return 1;
-    } else {
-        int resultadoParcial = potencia(base, expoente - 1); // chamada recursiva
-        int resultado = base * resultadoParcial; // variável para acompanhar no debug
-        return resultado;
+        if (expoente == 0) {
+            return 1;
+        } else {
+            int resultadoParcial = potencia(base, expoente - 1);
+            int resultado = base * resultadoParcial;
+            return resultado;
+        }
     }
-}
 }
 ```
 
 ## Exercício 2
 
-```java
 
-//Atividade 2
+## Exercício 3
+
+```java
+//Atividade 3
 
 /*Crie um programa que receba um vetor de números reais com 10 elementos. 
 Escreva um método recursivo que inverta a ordem dos elementos presentes no vetor.
@@ -80,7 +72,7 @@ Escreva um método recursivo que inverta a ordem dos elementos presentes no veto
 
 import java.util.Scanner;
 
-public class atividade2 {
+public class atividade3 {
 
     public static void main(String[] args) {
 
@@ -131,15 +123,14 @@ public class atividade2 {
     }
     
 }
-
 ```
 
-## Exercício 3
+## Exercício 4
 
 ```java
 import java.util.Scanner;
 
-public class atividade3 {
+public class atividade4 {
     
     public static void main(String[] args) {
 
@@ -174,11 +165,10 @@ public class atividade3 {
 }
 ```
 
-## Exercício 4
+## Exercício 5
 
 ```java
-
-/* Atividade 4 */
+/* Atividade 5 */
 
 /*Uma palavra de Fibonacci e definida por:
 f(n) = b se n = 0
@@ -192,8 +182,10 @@ Aqui o símbolo “+” denota a concatenação de duas strings. Esta sequência
 b, a, ab, aba, abaab, abaababa, abaababaabaab, ...
 
 Faça um método recursivo que receba um número N e retorne a N- ésima palavra de Fibonacci. */
+
+
 import java.util.Scanner;
-public class atividade4 {
+public class atividade5 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -221,52 +213,11 @@ public class atividade4 {
         }
     }
 }
-
-```
-
-## Exercício 5
-
-```java
-
-//Fibonnaci
-
-public class atividade5
-{
-
-    public static void main(String[] args){
-        
-
-    System.out.println(palavraFibo(5));
-    }
-
-
-
-    public static String palavraFibo(int n){
-        String palavra = "";
-        String palavra2 = "";
-        if (n==0){
-            palavra += 'b';
-            return palavra;
-        } else if (n==1){
-            palavra += 'a';
-            return palavra;
-        }else {
-            
-          palavra += palavraFibo(n-1);
-          palavra2 += palavraFibo(n-2);
-        return palavra+=palavra2;
-        }
-
-
-    }
-}
-
 ```
 
 ## Exercício 6
 
 ```java
-
 //Tribonacci
 
 public class atividade6
@@ -291,13 +242,11 @@ public class atividade6
         }
     }
 }
-
 ```
 
 ## Exercício 7
 
 ```java
-
 //Pell  
 
 public class atividade7
@@ -316,13 +265,11 @@ public class atividade7
         }
     }
 }
-
 ```
 
 ## Exercício 8
 
 ```java
-
 //Padovan
 
 public class atividade8
@@ -339,7 +286,6 @@ public class atividade8
         }
     }
 }
-
 ```
 
 
