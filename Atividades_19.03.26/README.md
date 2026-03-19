@@ -1,3 +1,12 @@
+## Integrantes da dupla
+
+- **João Vitor Gomes da Hora Fontes** — BV3054888  
+- **Gustavo Fernando Ferreira Vasconcelos Rinck** — BV3059685  
+
+## Observação
+
+O enunciado completo dos exercícios pode ser consultado no **arquivo `Aula 03 - Atividade para nota.docx` presente nesta pasta**, que foi disponibilizado pelo professor da disciplina.
+
 ## Exercicio 1
 1.	Escreva uma função que decida se um vetor v[0..n-1] está em ordem crescente.  Depois, critique o código a seguir.
 
