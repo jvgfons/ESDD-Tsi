@@ -90,6 +90,24 @@ Essa função recursiva vai diminuindo o tamanho do vetor até encontrar o lugar
 
 #  Exercício 5
 
+5.	Suponha que o vetor v tem 511 elementos crescentes e que x não está no vetor.  Quantas vezes, exatamente, a função buscaBinaria comparará x com um elemento do vetor?  
+
+Ele fará a comparação 9 vezes, sendo essa uma linha de comparações possível:
+
+| Vezes | Início | Fim | Meio | X == Meio |
+|-------|--------|-----|------|-----------|
+| 1     | 0      | 510 | 255  | não       |
+| 2     | 256    | 510 | 383  | não       |
+| 3     | 384    | 510 | 447  | não       |
+| 4     | 448    | 510 | 479  | não       |
+| 5     | 480    | 510 | 495  | não       |
+| 6     | 496    | 510 | 503  | não       |
+| 7     | 504    | 510 | 507  | não       |
+| 8     | 508    | 510 | 509  | não       |
+| 9     | 510    | 510 | 510  | não       |
+
+Em que ele para ao comparar com o último número, sendo ele diferente de x e retornando que x não está presente no vetor.
+
 
 
 
