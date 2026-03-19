@@ -26,6 +26,7 @@ Os arquivos e pastas serão adicionados conforme o andamento da disciplina e das
 As atividades estarão organizadas em pastas específicas na raiz do repositório.
 
 [Atividades 12/03/2026 (Recursividade Java)](https://github.com/jvgfons/ESDD-Tsi/tree/main/Atividades_12.03.26)
+[Atividades 19/03/2026 (Algoritmos de busca)](https://github.com/jvgfons/ESDD-Tsi/tree/main/Atividades_19.03.26)
 
 ## Informações importantes
 
