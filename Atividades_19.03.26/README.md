@@ -1,4 +1,5 @@
 ## Exercicio 1
+1.	Escreva uma função que decida se um vetor v[0..n-1] está em ordem crescente.  Depois, critique o código a seguir.
 
 ``` java
 int verifica (int v[], int n) {
@@ -10,7 +11,27 @@ int verifica (int v[], int n) {
 
 ```
 
-Esse codigo verifica se o vetor é crescente, primeiro, ele recebe o vetor em "int v[]" e o tamanho do vetor em "int n" , depois ele assume que o vetor está ordenado, em  int anterior = v[0], sim = 1 , a partir do segundo elemento, ele entra no For, a cada passo o for verifica se "i < n && sim" , ou seja em qualquer momento que i ou sim estiverem com valor 0, o loop se encerra e retorna o valor de sim, que varia entre 1 ou 0, dentro do For, temos um if, ele verifica se o índice anterior é maior que a posição de i, que é a posição que o loop está verificando no momento, caso seja, define o valor 0 para sim, saindo do for e retornando o valor de sim, que nesse caso é 0.
+
+
+Esse código verifica se um vetor está em ordem crescente. Primeiro, ele assume que está ordenado (sim = 1) e guarda o primeiro valor como referência (anterior = v[0]). Depois, começa a comparar cada elemento com o anterior. Se encontrar algum valor menor que o anterior, significa que a ordem foi quebrada, então sim vira 0 e o laço para. No final, a função retorna 1 se o vetor estiver ordenado, ou 0 se não estiver.
+
+Nossa função:
+
+```java
+public static boolean crescente(int[] vetor) {
+        for (int i = 0; i < vetor.length - 1; i++) {
+            if (vetor[i] > vetor[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+```
+
+A nossa função criada para esse mesmo objetivo foi feita de forma diferente, achamos melhor utilizar o tipo boolean já que só é possível o vetor ser crescente ou não, caso seja retorna true, caso contrario retorna false.
+
+A função percorre o loop até o penultimo elemento (vetor.length - 1), comparando o valor atual do índice i com p valor do proximo indice, caso o valor do proximo seja maior que o atual, o programa retorna falso, caso não ocorra isso em nenhum índice o programa não entra na condição do if e retorna true.
+
 
 ## Exercício 2
 
