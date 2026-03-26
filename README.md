@@ -29,6 +29,8 @@ As atividades estarão organizadas em pastas específicas na raiz do repositóri
 
 [Atividades 19/03/2026 (Algoritmos de busca)](https://github.com/jvgfons/ESDD-Tsi/tree/main/Atividades_19.03.26)
 
+[Atividades 26/03/2026 (Percolação)](https://github.com/jvgfons/ESDD-Tsi/tree/main/Atividades_26.03.26)
+
 
 ## Informações importantes
 
